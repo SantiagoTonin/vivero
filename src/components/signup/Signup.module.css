@@ -1,0 +1,68 @@
+.mainContainerSignup {
+  background: url(https://www.pequeocio.com/wp-content/uploads/2019/11/tipos-clases-plantas.jpg);
+  background-size: cover;
+  padding: 3rem;
+  width: 100%;
+}
+.signupContainer {
+  width: 430px;
+  margin: 160px auto;
+  border: 1px solid #41bb41;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  background: #47c67cdb;
+}
+.signupContainer p {
+  text-align: center;
+}
+.signupContainer p a {
+  color: #273725;
+}
+.signupContainer p a:hover {
+  color: #018c1a;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.formContainer h1 {
+  margin-bottom: 10px;
+}
+.formContainer label {
+  padding-bottom: 5px;
+}
+.formContainer label span {
+  color: #980606;
+  font-size: 20px;
+}
+.formContainer input {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.formContainer input[type="submit"] {
+  width: 320px;
+  cursor: pointer;
+  background-color: #21aa5b;
+  margin-top: 15px;
+}
+.formContainer input[type="submit"]:hover {
+  background-color: #219b54;
+}
+
+.logoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoTitle img {
+  width: 40px;
+}

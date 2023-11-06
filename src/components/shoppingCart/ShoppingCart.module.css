@@ -1,0 +1,155 @@
+.container {
+  display: block;
+  width: 75%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 #737373;
+  background: #fff;
+  margin: 32px auto;
+  padding: 40px 64px;
+}
+
+.infoContainer {
+  background-color: #fff;
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.tabContainer {
+  display: inline-block;
+  margin-bottom: -8px;
+  padding-left: 5px;
+  border-bottom: 3px solid #47c67c;
+}
+
+.shopping {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  width: auto;
+  font-size: 17px;
+  padding: 16px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title > h2 {
+  margin-bottom: 5px;
+}
+
+.divisor {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #000;
+  margin-top: 1rem;
+}
+
+.card {
+  display: inline-block;
+  margin: 29px;
+  background-color: #fff;
+  height: 25rem;
+  width: 18rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.185rem;
+}
+
+.imgProduct {
+  position: relative;
+  height: 50%;
+  width: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name > :first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.name > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.name > :nth-child(2) {
+  font-size: 0.7rem;
+  margin: auto;
+
+}
+
+.boton {
+  width: 100%;
+  padding: 0.75rem 0rem;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  margin-top: 21px;
+  cursor: pointer;
+}
+
+.deleteAll {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  width: 15%;
+  height: 44px;
+  padding: 0.75rem 0rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.botonYtotal {
+  display: flex;
+  align-items: baseline;
+}
+
+.loadingBox{
+  width: fit-content;
+  height: 19rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.contador{
+  background-color: red;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+}
+
+.contador:nth-child(1){
+  font-size: medium;
+}
+
+.totalPriceContainer{
+  display: flex;
+}

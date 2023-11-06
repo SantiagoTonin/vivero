@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:ital,wght@0,200;1,200;1,600&family=Playball&family=Poppins:ital,wght@0,600;0,700;1,600&family=Roboto:ital,wght@1,300;1,700&display=swap");
+
+.container_form {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.container_info {
+  width: 75%;
+  height: auto;
+  background: #47c67c;
+  position: relative;
+  max-height: 50rem;
+}
+
+.imagenFondo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.logo {
+  position: absolute;
+  right: 37rem;
+  width: 15%;
+}
+
+.form_product {
+  width: 25%;
+  height: auto;
+  background: #000;
+  border: 1px solid #000;
+}
+
+/* input */
+
+.input_group {
+  position: relative;
+  margin: 1rem;
+}
+
+.inputs {
+  border: solid 1.5px #47c67c;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 90%;
+}
+
+.user_label {
+  position: absolute;
+  left: 15px;
+  color: #47c67c;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputs:focus,
+inputs:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+.inputs:focus~label,
+.inputs:valid~label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #000;
+  padding: 0 0.2em;
+  color: #2196f3;
+}
+
+/* selector de img */
+.btnLabel {
+  display: flex;
+  color: #00a97f;
+  margin: 1.5rem 1rem;
+}
+
+.btnSelector {
+  padding: 0.5rem;
+  border: 1px solid #00a97f;
+  border-radius: 0.5rem;
+}
+
+.textoDescriptivo {
+  border: 2px solid #47c67c;
+  background-color: black;
+  color: white;
+  resize: none;
+}
+
+.textoDescriptivo:focus {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+textarea::placeholder {
+  color: #47c67c;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* caja con imagenes */
+.filaImg {
+  display: flex;
+  border: 1px dashed #00a97f;
+  margin: 0.1rem 1rem 1rem 1rem;
+}
+
+.caja {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.5rem;
+  background-color: black;
+}
+
+.caja::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  float: left;
+}
+
+.content_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  border: 1px solid white;
+  display: flex;
+}
+
+.img_responsive {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btnDelete {
+  background-color: green;
+  font-size: 11px;
+  border-radius: 10px 0px;
+  position: absolute;
+  margin: -4px;
+}
+
+/*texto*/
+
+.cajaTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 30%;
+  top: 30%;
+  right: 25%;
+  position: absolute;
+}
+
+.texto {
+  animation: caja 10s ease-in-out infinite;
+  position: absolute;
+  color: #088439;
+  font-family: "Poppins", sans-serif;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 2px 2px 1px #000;
+}
+
+@keyframes caja {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  25% {
+    opacity: 1;
+
+    transform: translateX(0%);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform: translateX(0%);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  90% {
+    opacity: 0;
+
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: translateX(-100%);
+  }
+}
+
+/* enviar y limpiar  */
+
+.btnSend {
+  --color: #00a97f;
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-left: 1rem;
+}
+
+.btnSend::after,
+.btnSend::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btnSend::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnSend:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnSend:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btnSend:hover {
+  color: var(--color2);
+}
+
+.btnSend:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.btnUnder {
+  padding-bottom: 1rem;
+}
+
+.errorText {
+  color: red;
+  margin-left: 1.5rem;
+  font-size: small;
+  font-family: "Roboto";
+}

@@ -1,0 +1,162 @@
+.container {
+  padding: 0.2rem;
+  margin-top: 114px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > :nth-child(1) {
+  position: absolute;
+  width: 8rem;
+  left: 30%;
+  top: -3rem;
+}
+.products {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 25% auto;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.menu > li:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  height: 25rem;
+  overflow-y: scroll;
+  grid-gap: 2rem;
+}
+
+.product {
+  width: 17rem;
+  height: 11rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.products > img {
+  top: 3rem;
+  width: 6rem;
+  height: 11rem;
+}
+
+.btnDescPro {
+  font-size: 0.7rem;
+  border: 1px solid var(--black);
+  padding: 5px 17px;
+  width: 8rem;
+  border-radius: 9px;
+  font-weight: bold;
+  background-color: rgb(25, 124, 12);
+  color: #fff;
+  cursor: pointer;
+}
+
+.divSHDescProd {
+  width: 70%;
+  min-height: 700px;
+  background: white;
+  position: fixed;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  top: 0;
+}
+.divSHDescProd:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  background: url(../../assets/ramas.png) 0 0 no-repeat;
+  transform: rotate(180deg);
+}
+.mainDivSHDescProd {
+    min-height: 1200px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    top: 0;
+}
+
+.barTopDivSH {
+  text-align: right;
+  padding: 10px 17px;
+  font-size: 25px;
+}
+.barTopDivSH svg {
+  cursor: pointer;
+}
+
+.contentDivSH {
+  display: flex;
+  align-items: center;
+}
+.contentDivSH p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.contentDivSH p span {
+  font-weight: 400;
+}
+
+.divContLink {
+  text-align: center;
+  margin-top: 60px;
+}
+.linkCarSHDescProd {
+  margin-top: 10px;
+  font-size: 17px;
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: rgb(25, 124, 12);
+  color: #fff;
+  cursor: pointer;
+}
+
+.imgSHDescProd {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.loadProduct{
+  background-color: black;
+  height: 15%;
+  width: 4%;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  margin: 6rem 30rem;
+  border-radius: 43px;
+  position: absolute;
+}

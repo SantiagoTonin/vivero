@@ -1,0 +1,80 @@
+.s-container {
+  position: relative;
+}
+
+.s-container .swiper {
+  width: 70%;
+  height: 12rem;
+  position: unset;
+}
+
+.s-container .swiper-slide {
+  background: #ffffff;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.s-container .swiper-button-prev {
+  left: 6rem;
+}
+.s-container .swiper-button-next {
+  right: 6rem;
+}
+.s-container .swiper-button-prev,
+.s-container .swiper-button-next {
+  color: black;
+}
+.left-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name > :first-child {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.name > :nth-child(2) {
+  font-size: 0.7rem;
+}
+
+.left-s > :nth-child(2) {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.left-s > :nth-child(3) {
+  font-size: 0.7rem;
+  border: 1px solid var(--black);
+  padding: 5px 16px;
+  width: 8rem;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  border-radius: 9px;
+  font-weight: bold;
+  background-color: rgb(25, 124, 12);
+  color: #fff;
+  cursor: pointer;
+}
+
+.img-p {
+
+  position: absolute;
+  right: 0;
+  width: 43%;
+  height: 100%;
+  bottom: 0%;
+}
